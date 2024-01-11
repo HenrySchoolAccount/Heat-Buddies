@@ -37,7 +37,7 @@ function App() {
         </ParallaxLayer>
 
          <ParallaxLayer class="image" speed={0.1} offset={0.3}>
-          <img src="https://media.istockphoto.com/id/1034398178/video/slow-motion-of-rain-and-umbrella.jpg?s=640x640&k=20&c=ffGz-1pYPS6eH6hZfa5otc1EZ5Q3dWNPRuXaaeYeUrg="></img>
+          <img src={umbrella0}></img>
         </ParallaxLayer>
         <ParallaxLayer speed={0.2} offset={1}>
           <div className="Title" style={{display: "flex",justifyContent: "center",}}>
