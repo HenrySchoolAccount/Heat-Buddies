@@ -1,4 +1,0 @@
-#91afda (Deselected)
-#dedcff (Hover)
-#4b47d1 (Selected)
-
