@@ -48,3 +48,7 @@ body {
 img {
   border-radius: 10px;
 }
+
+.Title {
+  font-size: 75px;
+}

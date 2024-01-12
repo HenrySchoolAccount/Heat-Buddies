@@ -19,15 +19,16 @@ function App() {
           }}
         />
 
-        <ParallaxLayer speed={0.75}>
+        <ParallaxLayer speed={0.75} >
           <h1
             class="Title"
             style={{ display: "flex", justifyContent: "center" }}
           >
             The future of Umbrellas.
           </h1>
-
-          <div class="warning">
+        </ParallaxLayer>
+        <ParallaxLayer speed={0.8} offset={0.25}>
+        <div class="warning">
             <p style={{ display: "flex", justifyContent: "center" }}>
               ⓘ Please note that this project is not real.
             </p>
@@ -36,16 +37,15 @@ function App() {
             </p>
           </div>
         </ParallaxLayer>
-
         <ParallaxLayer class="image" speed={0.1} offset={0.3}>
           <img src={umbrella0}></img>
         </ParallaxLayer>
         <ParallaxLayer speed={0.2} offset={1}>
-          <div className="Title">
+          <div>
             <h1>Who We Are</h1>
           </div>
           <div class="Who">
-            <small>ⓘ please remember that this is fictional</small>
+<small>ⓘ please remember that this is fictional</small>
             <p style={{ display: "flex", justifyContent: "right" }}>
               One day, our founder,&nbsp;
               <a
