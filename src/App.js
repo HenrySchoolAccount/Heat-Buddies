@@ -19,7 +19,7 @@ function App() {
           }}
         />
 
-        <ParallaxLayer speed={0.75} >
+        <ParallaxLayer speed={0.75}>
           <h1
             class="Title"
             style={{ display: "flex", justifyContent: "center" }}
@@ -28,7 +28,7 @@ function App() {
           </h1>
         </ParallaxLayer>
         <ParallaxLayer speed={0.8} offset={0.25}>
-        <div class="warning">
+          <div class="warning">
             <p style={{ display: "flex", justifyContent: "center" }}>
               ⓘ Please note that this project is not real.
             </p>
@@ -45,7 +45,7 @@ function App() {
             <h1>Who We Are</h1>
           </div>
           <div class="Who">
-<small>ⓘ please remember that this is fictional</small>
+            <small>ⓘ please remember that this is fictional</small>
             <p style={{ display: "flex", justifyContent: "right" }}>
               One day, our founder,&nbsp;
               <a
