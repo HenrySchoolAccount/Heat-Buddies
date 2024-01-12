@@ -72,14 +72,18 @@ function App() {
         <ParallaxLayer
           offset={1.2}
           speed={0.2}
-          style={{ backgroundImage: `url(${umbrella1})`, backgroundSize:  `50%`}}
+          style={{
+            backgroundImage: `url(${umbrella1})`,
+            backgroundSize: `50%`,
+          }}
         ></ParallaxLayer>
         <ParallaxLayer speed={0.2} offset={2}>
           <h1 style={{ display: "flex", justifyContent: "right" }}>
             How are we different?&nbsp;
           </h1>
           <small style={{ display: "flex", justifyContent: "right" }}>
-            ⓘ this product is still fake&nbsp;&nbsp;&nbsp;
+            ⓘ this product is still
+            fake&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </small>
           <p style={{ display: "flex", justifyContent: "left" }}>
             <strike>Parallax</strike>
@@ -102,10 +106,6 @@ function App() {
             <li>Raspberry Pi Zero inside</li>
             <li>Compatible with Ultimate Doom (game purchase required)</li>
           </ol>
-
-          <h1 style={{ display: "flex", justifyContent: "center" }}>
-            Egg McMuffin
-          </h1>
         </ParallaxLayer>
         <ParallaxLayer
           speed={1}
@@ -116,12 +116,20 @@ function App() {
           }}
         />
 
-        <ParallaxLayer
-        speed={0.3}
-        offset={4}
-        
-        >
-
+        <ParallaxLayer speed={0.3} offset={3}>
+          <h1>Open Source</h1>
+          <p style={{ display: "flex", justifyContent: "right" }}>
+            All of the code to this project can be found for free online, and
+            you can code your own application for your
+            umbrella&nbsp;&nbsp;&nbsp;
+          </p>
+          <p style={{ display: "flex", justifyContent: "right" }}>
+            yourself. Feel free to fix bugs and add new features on our Github
+            page! (Again this product does not exist)&nbsp;&nbsp;&nbsp;
+          </p>
+          <h1 style={{ display: "flex", justifyContent: "center" }}>
+            Egg McMuffin
+          </h1>
         </ParallaxLayer>
       </Parallax>
     </div>
