@@ -1,17 +1,18 @@
 import foreground from "./Images/foreground.png";
 import background from "./Images/background.png";
 import umbrella0 from "./Images/istockphoto-1034398178-640x640.jpg";
+import umbrella1 from "./Images/istockphoto-1143045785-612x612.jpg";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
 function App() {
   return (
     <div class="website">
-      <Parallax pages={3}>
+      <Parallax pages={4}>
         {/*Background*/}
 
         <ParallaxLayer
           speed={0.25}
-          factor={4}
+          factor={5}
           style={{
             backgroundImage: `url(${background})`,
             backgroundSize: `cover`,
@@ -40,87 +41,66 @@ function App() {
           <img src={umbrella0}></img>
         </ParallaxLayer>
         <ParallaxLayer speed={0.2} offset={1}>
-          <div
-            className="Title"
-            style={{ display: "flex", justifyContent: "center" }}
-          >
+          <div className="Title">
             <h1>Who We Are</h1>
           </div>
           <div class="Who">
-            <small
-              style={{
-                display: "flex",
-                justifyContent: "center",
-                fontSize: "2",
-              }}
-            >
-              ⓘ please remember that this is fictional
-            </small>
-            <p style={{ display: "flex", justifyContent: "center" }}>
+            <small>ⓘ please remember that this is fictional</small>
+            <p style={{ display: "flex", justifyContent: "right" }}>
               One day, our founder,&nbsp;
               <a
-                style={{ display: "flex", justifyContent: "center" }}
+                style={{ display: "flex", justifyContent: "right" }}
                 href="https://duckduckgo.com/?q=random+name"
               >
                 Richie Bolling
               </a>
-              , was{" "}
+              , was&nbsp;&nbsp;&nbsp;{" "}
             </p>
-            <p style={{ display: "flex", justifyContent: "center" }}>
-              walking home when he realized that umbrellas suck. For
+            <p style={{ display: "flex", justifyContent: "right" }}>
+              walking home when he realized that umbrellas suck.
+              For&nbsp;&nbsp;&nbsp;
             </p>
-            <p style={{ display: "flex", justifyContent: "center" }}>
-              many years, they have the exact same, with the same problems.
+            <p style={{ display: "flex", justifyContent: "right" }}>
+              many years, they have been the exact same, with the same
+              problems.&nbsp;&nbsp;&nbsp;
             </p>
-            <p style={{ display: "flex", justifyContent: "center" }}>
-              Richie put together a team to fix them.
+            <p style={{ display: "flex", justifyContent: "right" }}>
+              Richie put together a team to fix them.&nbsp;&nbsp;&nbsp;
             </p>
           </div>
         </ParallaxLayer>
+        <ParallaxLayer
+          offset={1.2}
+          speed={0.2}
+          style={{ backgroundImage: `url(${umbrella1})`, backgroundSize:  `50%`}}
+        ></ParallaxLayer>
         <ParallaxLayer speed={0.2} offset={2}>
-          <h1 style={{ display: "flex", justifyContent: "center" }}>
-            How are we different?
+          <h1 style={{ display: "flex", justifyContent: "right" }}>
+            How are we different?&nbsp;
           </h1>
-          <p style={{ display: "flex", justifyContent: "center" }}>
+          <small style={{ display: "flex", justifyContent: "right" }}>
+            ⓘ this product is still fake&nbsp;&nbsp;&nbsp;
+          </small>
+          <p style={{ display: "flex", justifyContent: "left" }}>
             <strike>Parallax</strike>
           </p>
-          <small style={{ display: "flex", justifyContent: "center" }}>
-            ⓘ this product is still fake
-          </small>
 
-          <p style={{ display: "flex", justifyContent: "center" }}>
+          <p>
             Our product, Heat Buddies™, was designed with the 21
-            <sup style={{ display: "flex", justifyContent: "center" }}>st</sup>{" "}
-            century in mind.
+            <sup>st</sup> century in mind.
           </p>
-          <p style={{ display: "flex", justifyContent: "center" }}>
+          <p>
             The handle contains a heater to keep your hand warm while holding,
           </p>
-          <p style={{ display: "flex", justifyContent: "center" }}>
-            hense the name. Other features include:
-          </p>
+          <p>hense the name. Other features include:</p>
           <ol>
-            <li style={{ display: "flex", justifyContent: "center" }}>
-              LCD screen showing predicted weather
-            </li>
-            <li style={{ display: "flex", justifyContent: "center" }}>
-              Thunderbolt charging+data transfer port
-            </li>
-            <li style={{ display: "flex", justifyContent: "center" }}>
-              Companion app you can connect to with bluetooth
-            </li>
-            <li style={{ display: "flex", justifyContent: "center" }}>
-              4 customizable buttons
-            </li>
-            <li style={{ display: "flex", justifyContent: "center" }}>
-              Motor for automatically opening and shaking off umbrella
-            </li>
-            <li style={{ display: "flex", justifyContent: "center" }}>
-              Raspberry Pi Zero inside
-            </li>
-            <li style={{ display: "flex", justifyContent: "center" }}>
-              Compatible with Ultimate Doom (game purchase required)
-            </li>
+            <li>LCD screen showing predicted weather</li>
+            <li>Thunderbolt charging+data transfer port</li>
+            <li>Companion app you can connect to with bluetooth</li>
+            <li>4 customizable buttons</li>
+            <li>Motor for automatically opening and shaking off umbrella</li>
+            <li>Raspberry Pi Zero inside</li>
+            <li>Compatible with Ultimate Doom (game purchase required)</li>
           </ol>
 
           <h1 style={{ display: "flex", justifyContent: "center" }}>
@@ -135,6 +115,14 @@ function App() {
             backgroundSize: `cover`,
           }}
         />
+
+        <ParallaxLayer
+        speed={0.3}
+        offset={4}
+        
+        >
+
+        </ParallaxLayer>
       </Parallax>
     </div>
   );
